@@ -1,0 +1,192 @@
+
+/*======================================== config =================================*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+p {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none; 
+  color: #2e3750;
+  transition: .3s all !important;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+input {
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  &.open_menu { 
+    overflow: hidden;
+  }
+}
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  color: #333366;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: 'Articulat';
+  font-weight: normal;
+  background: #f9f9f9;
+  @media (max-width: 1600px) {
+    font-size: 20px;
+  }
+}
+.container {
+  max-width: 1920px;
+  padding: 0 110px;
+  @media (max-width: 1600px) {
+    padding: 0 80px;
+  }
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  //transition: .3s all !important;
+  outline: none !important;
+}
+
+/*======================================== end config =================================*/
+
+footer {
+  padding: 170px 0 45px 0;
+  background: url(../images/bg-fter.png) no-repeat;
+  background-size: cover;
+  background-position: top left;
+  font-size: 24px;
+}
+
+.item-fter {
+  .title-fter {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  ul  {
+    list-style: none;
+    li {
+      margin-bottom: 6px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.item-fter-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    li {
+      margin-right: 10px;
+      padding-right: 10px;
+      position: relative;
+      &:last-child {
+        margin-right: 0;
+        padding-right: 0;
+        &:after {
+          display: none;
+        }
+      }
+      &:After {
+        content: "|";
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+.fter-bot {
+  margin-top: 100px;
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    li {
+      margin-right: 25px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        display: flex;
+      }
+    }
+  }
+  .copyright {
+    display: flex;
+    align-items: center;
+    img {
+      position: relative;
+      top: 3px;
+      margin-left: 20px;
+    }
+  }
+}
+
+.header-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 60px 0;
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    li {
+      margin-right: 60px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        color: #cccccc;
+        font-weight: bold;
+        font-size: 20px; 
+      }
+    }
+  }
+}
