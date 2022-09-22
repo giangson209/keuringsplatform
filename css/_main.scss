@@ -5,6 +5,12 @@ $blue: #3366ff;
 	@media (max-width: 1600px) {
 		margin-bottom: 45px;
 	}
+	@media (max-width: 1023px) {
+		margin-bottom: 32px;
+	}
+	@media (max-width: 767px) {
+		margin-bottom: 24px;
+	}
 	h2 {
 		font-weight: bold;
 		font-size: 70px;
@@ -13,8 +19,14 @@ $blue: #3366ff;
 		@media (max-width: 1600px) {
 			font-size: 55px;
 		}
+		@media (max-width: 1400px) {
+			font-size: 44px;
+		}
+		@media (max-width: 1023px) {
+			font-size: 32px;
+		}
 	}
-}
+} 
 
 .btn-main {
 	a {
@@ -27,6 +39,12 @@ $blue: #3366ff;
 	    background-image: -webkit-linear-gradient( -158deg, rgb(103,182,249) 0%, rgb(72,98,249) 100%);
 	    background-image: -ms-linear-gradient( -158deg, rgb(103,182,249) 0%, rgb(72,98,249) 100%);
 	    line-height: 1;
+	    @media (max-width: 1400px) {
+	    	padding: 15px 25px;
+	    }
+	    @media (max-width: 767px) {
+	    	font-size: 14px;
+	    }
 	}
 }
 
@@ -35,6 +53,9 @@ $blue: #3366ff;
 	background: url('../images/bg-banner.png') no-repeat center;
 	background-size: cover;
 	background-position: bottom;
+	@media (max-width: 1023px) {
+		padding: 100px 0 30px 0;
+	}
 }
 
 .content-banner {
@@ -46,6 +67,11 @@ $blue: #3366ff;
 		text-align: right;
 		max-width: 52%;
     	margin-left: auto;
+    	@media (max-width: 1023px) {
+    		margin: 0 auto;
+		    max-width: 100%;
+		    text-align: center;
+    	}
 	}
 	.txt-banner {
 		position: absolute;
@@ -57,6 +83,13 @@ $blue: #3366ff;
 	    align-items: center;
 	    max-width: 60%;
 	    color: #cccccc;
+	    @media (max-width: 1023px) {
+	    	position: relative;
+		    max-width: 100%;
+		    text-align: center;
+		    justify-content: center;
+		    margin-bottom: 32px;
+	    }
 	    &.banner-cate-txt {
 	    	max-width: 52%;
 	    	top: -16%;
@@ -70,6 +103,15 @@ $blue: #3366ff;
     	line-height: initial;
 		@media (max-width: 1600px) {
 			font-size: 52px;
+		}
+		@media (max-width: 1400px) {
+			font-size: 44px;
+		}
+		@media (max-width: 1023px) {
+			font-size: 32px;
+		}
+		@media (max-width: 767px) {
+			font-size: 24px;
 		}
     	span {
     		font-weight: bold;
@@ -91,6 +133,9 @@ $blue: #3366ff;
 }
 .btn-banner {
 	margin-top: 40px;
+	@media (max-width: 1400px) {
+		margin-top: 24px;
+	}
 	a {
 		color: #cccccc;
 	    font-size: 24px;
@@ -105,6 +150,14 @@ $blue: #3366ff;
 			font-size: 20px;
 			height: 60px;
 		}
+		@media (max-width: 1600px) {
+			font-size: 16px;
+			height: 50px;
+		}
+		@media (max-width: 767px) {
+			font-size: 14px;
+			height: 50px;
+		}
 	    &:after {
 	    	content: "";
 	    	width: 100%;
@@ -117,24 +170,55 @@ $blue: #3366ff;
 	    }
 	}
 }
+
+.box-scroll-down {
+	@media (max-width: 767px) {
+		display: none;
+	}
+}
+
 .box-keuringen {
 	padding: 80px 0 280px 0;
 	@media (max-width: 1600px) {
 		padding: 80px 0 200px 0;
 	}
+	@media (max-width: 1023px) {
+		padding: 40px 0 100px 0;
+	}
+	@media (max-width: 767px) {
+		padding: 32px 0;
+	}
 }
 .list-keu-home {
 	.row {
 		margin: 0  -12px;
+		@media (max-width: 1023px) {
+			margin: 0 -10px;
+		}
+		@media (max-width: 767px) {
+			margin: 0 -7px;
+		}
 		.col-md-2 {
 			padding: 12px;
 			flex: 0 0 20%;
 			max-width: 20%;
 			text-align: center;
+			@media (max-width: 1023px) {
+				padding: 10px;
+			}
+			@media (max-width: 767px) {
+				flex: 0 0 50%;
+				max-width: 50%;
+				padding: 7px;
+			}
 			&:first-child {
 				flex: 0 0  40%;
 				max-width: 40%;
 				text-align: left;
+				@media (max-width: 767px) {
+					flex: 0 0 100%;
+					max-width: 100%;
+				}
 			}
 		}
 	}
@@ -159,6 +243,19 @@ $blue: #3366ff;
 			font-size: 25px;
 			padding: 30px;
 		}
+		@media (max-width: 1400px) {
+			font-size: 20px;
+    		padding: 25px;
+		}
+		@media (max-width: 1023px) {
+			font-size: 16px;
+    		padding: 20px;
+		}
+		@media (max-width: 767px) {
+			font-size: 14px;
+		    padding: 15px;
+		    border-radius: 10px;
+		}
 	    &:hover {
 	    	background-image: -moz-linear-gradient( -104deg, rgb(159,221,213) 0%, rgb(74,211,172) 100%);
 		    background-image: -webkit-linear-gradient( -104deg, rgb(159,221,213) 0%, rgb(74,211,172) 100%);
@@ -173,6 +270,12 @@ $blue: #3366ff;
 	@media (max-width: 1600px) {
 		margin-bottom: 220px;
 	}
+	@media (max-width: 1023px) {
+		margin-bottom: 100px;
+	}
+	@media (max-width: 767px) {
+		margin-bottom: 60px;
+	}
 }
 
 .content-aanv {
@@ -183,17 +286,33 @@ $blue: #3366ff;
 		    bottom: 0;
 		    left: -7%;
 		    z-index: -1;
+		    @media (max-width: 767px) {
+		    	display: none;
+		    }
 		}
 	}
 }
 
 .txt-aanvra {
+	@media (max-width: 1023px) {
+		padding: 40px 0 0 0;
+		text-align: center;
+	}
+	@media (max-width: 767px) {
+		padding: 32px 0 0 0;
+	}
 	.desc {
 		margin-bottom: 65px;
 		font-weight: bold;
 		line-height: 1.4;
 		@media (max-width: 1600px) {
 			margin-bottom: 45px;
+		}
+		@media (max-width: 1023px) {
+			margin-bottom: 32px;
+		}
+		@media (max-width: 767px) {
+			font-weight: normal;
 		}
 	}
 }
@@ -208,11 +327,21 @@ $blue: #3366ff;
 		padding: 80px 0;
 		margin-bottom: 160px;
 	}
+	@media (max-width: 1023px) {
+		padding: 60px 0;
+		margin-bottom: 100px;
+	}
+	@media (max-width: 767px) {
+		margin-bottom: 60px;
+	}
 	.abs-video {
 		position: absolute;
 		top: -20%;
 		right: -3%;
 		width: 20%;
+		@media (max-width: 767px) {
+			top: -10%;
+		}
 	}
 	.title {
 		h2 {
@@ -226,6 +355,9 @@ $blue: #3366ff;
 		margin-bottom: 70px;
 		@media (max-width: 1600px) {
 			max-width: 1100px;
+		}
+		@media (max-width: 1023px) {
+			margin-bottom: 32px;
 		}
 	}
 	.play-video {
@@ -241,6 +373,9 @@ $blue: #3366ff;
 			@media (max-width: 1600px) {
 				width: 100px;
 			}
+			@media (max-width: 1023px) {
+				width: 60px;
+			}
 		}
 	}
 	.txt-link-video {
@@ -254,8 +389,26 @@ $blue: #3366ff;
 			@media (max-width: 1600px) {
 				font-size: 24px;
 			}
+			@media (max-width: 1400px) {
+				font-size: 20px;
+			}
+			@media (max-width: 1023px) {
+				font-size: 16px;
+			}
 			img {
 				margin-left: 25px;
+				@media (max-width: 1400px) {
+					height: 21px;
+				    position: relative;
+				    top: 4px;
+				}
+				@media (max-width: 1023px) {
+					height: 16px;
+				    top: 2px;
+				}
+				@media (max-width: 767px) {
+					margin-left: 15px;
+				}
 			}
 		}
 	}
@@ -264,6 +417,9 @@ $blue: #3366ff;
 .box-contact {
 	margin-bottom: 60px;
 	position: relative;
+	@media (max-width: 767px) {
+		margin-bottom: 32px;
+	}
 	.abs-contact {
 		position: absolute;
 		top: -7%;
@@ -272,6 +428,9 @@ $blue: #3366ff;
 	}
 	.title {
 		margin-bottom: 50px;
+		@media (max-width: 1023px) {
+			margin-bottom: 32px;
+		}
 	}
 	.desc-contact {
 		font-weight: bold;
@@ -284,11 +443,28 @@ $blue: #3366ff;
 	padding-top: 55px;
 	margin: 0 auto;
 	max-width: 1260px;
+	@media (max-width: 1023px) {
+		padding: 32px 0 0 0;
+	}
 	.item-frm {
 		margin-bottom: 30px;
+		@media (max-width: 767px) {
+			margin-bottom: 24px;
+		}
 		&:last-child {
 			margin-top: 70px;
 			margin-bottom: 0;
+			@media (max-width: 1023px) {
+				margin-top: 32px;
+			}
+		}
+		.col-md-6 {
+			@media (max-width: 767px) {
+				margin-bottom: 24px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
 		}
 		.txt_field {
 			background-color: rgb(255, 255, 255);
@@ -303,6 +479,20 @@ $blue: #3366ff;
 			outline: 1px solid transparent;
 			@media (max-width: 1600px) {
 				font-size: 24px;
+			}
+			@media (max-width: 1400px) {
+				font-size: 20px;
+			}
+			@media (max-width: 1023px) {
+				font-size: 16px;
+			    border-radius: 10px;
+			    height: 55px;
+			    padding: 0 15px;
+			}
+			@media (max-width: 767px) {
+				font-size: 14px;
+			    height: 50px;
+			    font-weight: normal;
 			}
 			&::placeholder {
 				color: #a3b0fc;
@@ -322,6 +512,23 @@ $blue: #3366ff;
 			font-size: 30px;
 			border-radius: 30px;
 			outline: 1px solid transparent;
+			@media (max-width: 1600px) {
+				font-size: 24px;
+			}
+			@media (max-width: 1400px) {
+				font-size: 20px;
+			}
+			@media (max-width: 1023px) {
+				font-size: 16px;
+			    border-radius: 10px;
+			    height: 150px;
+			    padding: 10px 15px;
+			}
+			@media (max-width: 1023px) {
+				font-size: 14px;
+			    font-weight: normal;
+			    height: 100px;
+			}
 			&::placeholder {
 				color: #a3b0fc;
 			}
@@ -340,6 +547,12 @@ $blue: #3366ff;
 			background-image: -moz-linear-gradient(-158deg, rgb(103, 182, 249) 0%, rgb(72, 98, 249) 100%);
 			background-image: -webkit-linear-gradient(-158deg, rgb(103, 182, 249) 0%, rgb(72, 98, 249) 100%);
 			background-image: -ms-linear-gradient(-158deg, rgb(103, 182, 249) 0%, rgb(72, 98, 249) 100%);
+			@media (max-width: 1023px) {
+				height: 55px;
+			}
+			@media (max-width: 767px) {
+				height: 45px;
+			}
 		}
 	}
 }

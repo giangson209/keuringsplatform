@@ -82,13 +82,13 @@
         <div class="container">
             <div class="content-aanv">
                 <div class="row align-items-center">
-                    <div class="col-md-7 text-center">
+                    <div class="col-lg-7 text-center">
                         <div class="avarta">
                             <img src="images/avarta-aanv.png" class="img-fluid" alt="">
                             <div class="abs-aanv"><img src="images/after-aan.png" class="img-fluid" alt=""></div>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-lg-5">
                         <div class="txt-aanvra">
                             <div class="title">
                                 <h2>Keuring  aanvragen</h2>
