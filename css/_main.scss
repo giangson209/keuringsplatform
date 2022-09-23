@@ -93,8 +93,21 @@ $blue: #3366ff;
 	    &.banner-cate-txt {
 	    	max-width: 52%;
 	    	top: -16%;
+			@media (max-width: 1023px) {
+				top: 0;
+				max-width: 100%;
+			}
 	    	.desc {
 	    		margin-bottom: 55px;
+				@media (max-width: 1600px) {
+					margin-bottom: 40px;
+				}
+				@media (max-width: 1023px) {
+					margin-bottom: 32px;
+				}
+				@media (max-width: 767px) {
+					margin-bottom: 20px;
+				}
 	    	}
 	    }
 	}
@@ -122,11 +135,36 @@ $blue: #3366ff;
     		font-weight: bold;
     		color: #fff;
     		line-height: 1.45;
+			@media (max-width: 1600px) {
+				font-size: 24px;
+			}
+			@media (max-width: 1400px) {
+				font-size: 20px;
+			}
+			@media (max-width: 1200px) {
+				font-size: 18px;
+			}
+			@media (max-width: 767px) {
+				font-size: 14px;
+				font-weight: normal;
+			}
     		h1 {
     			color: #66ffcc;
     			font-size: 65px;
     			font-weight: bold;
     			margin-bottom: 50px;
+				@media (max-width: 1600px) {
+					font-size: 52px;
+					margin-bottom: 40px;
+				}
+				@media (max-width: 1400px) {
+					font-size: 44px;
+					margin-bottom: 32px;
+				}
+				@media (max-width: 1023px) {
+					font-size: 32px;
+					margin-bottom: 20px;
+				}
     		}
     	}
 	}
@@ -488,11 +526,11 @@ $blue: #3366ff;
 			    border-radius: 10px;
 			    height: 55px;
 			    padding: 0 15px;
+				font-weight: normal;
 			}
 			@media (max-width: 767px) {
 				font-size: 14px;
 			    height: 50px;
-			    font-weight: normal;
 			}
 			&::placeholder {
 				color: #a3b0fc;
@@ -559,6 +597,15 @@ $blue: #3366ff;
 
 .box-faqq {
 	padding: 60px 0 350px 0;
+	@media (max-width: 1600px) {
+		padding: 60px 0 200px 0;
+	}
+	@media (max-width: 1023px) {
+		padding: 40px 0 100px 0;
+	}
+	@media (max-width: 767px) {
+		padding: 0 0 40px 0;
+	}
 }
 
 .item-faq {
@@ -567,6 +614,13 @@ $blue: #3366ff;
   	box-shadow: 0px 13px 54px 0px rgba(105, 95, 151, 0.08);
   	border-radius: 30px;
   	overflow: hidden;
+	@media (max-width: 1023px) {
+		border-radius: 15px;
+	}
+	@media (max-width: 767px) {
+		border-radius: 8px;
+		margin-bottom: 16px;
+	}
 	&:last-child {
 		margin-bottom: 0;
 	}
@@ -576,6 +630,18 @@ $blue: #3366ff;
 		font-weight: bold;
 		position: relative;
 		cursor: pointer;
+		@media (max-width: 1600px) {
+			font-size: 24px;
+			padding: 45px 55px;
+		}
+		@media (max-width: 1023px) {
+			padding: 25px;
+			font-size: 20px;
+		}
+		@media (max-width: 767px) {
+			padding: 15px;
+			font-size: 16px;
+		}
 		.icon {
 		    position: absolute;
 		    top: 0;
@@ -586,6 +652,20 @@ $blue: #3366ff;
 		    align-items: center;
 		    justify-content: center;
 		    transition: .4s all !important;
+			@media (max-width: 1023px) {
+				right: 25px;
+			}
+			@media (max-width: 767px) {
+				right: 15px;
+			}
+			img {
+				@media (max-width: 1023px) {
+					width: 15px;
+				}
+				@media (max-width: 767px) {
+					width: 10px;
+				}
+			}
 		}
 		&.active {
 			.icon {
@@ -598,20 +678,54 @@ $blue: #3366ff;
 	    padding: 0 80px 100px 80px;
 	    font-weight: bold;
 	    margin-top: -25px;
+		@media (max-width: 1600px) {
+			margin-top: 0;
+			padding: 0 55px 55px 55px;
+		}
+		@media (max-width: 1023px) {
+			padding: 0 25px 25px 25px;
+			font-weight: normal;
+		}
+		@media (max-width: 767px) {
+			padding: 0 15px 15px 15px;
+		}
 	}
 }
 .box-keuringen-cate {
 	padding: 150px 0 210px 0;
+	@media (max-width: 1400px) {
+		padding: 120px 0 150px 0;
+	}
+	@media (max-width: 1023px) {
+		padding: 50px 0 80px 0;
+	}
+	@media (max-width: 767px) {
+		padding: 0 0 30px 0;
+	}
 }
 .list-keuringen {
 	.row {
 		margin: 0 -12px;
+		@media (max-width: 767px) {
+			margin: 0 -7px;
+		}
 		>div {
 			padding: 12px;
+			@media (max-width: 767px) {
+				padding: 7px;
+			}
 		}
 		.col-md-2 {
 			flex: 0 0 20%;
 			max-width: 20%;
+			@media (max-width: 1023px) {
+				max-width: calc(100% / 3);
+				flex: 0 0 calc(100% / 3);
+			}
+			@media (max-width: 767px) {
+				max-width: 50%;
+				flex: 0 0 50%;
+			}
 		}
 	}
 }
@@ -638,15 +752,49 @@ $blue: #3366ff;
 		    background-image: -ms-linear-gradient(-104deg, rgb(159, 221, 213) 0%, rgb(74, 211, 172) 100%);
 		    color: #fff;
 	    }
+		@media (max-width: 1600px) {
+			font-size: 24px;
+			min-height: auto;
+		}
+		@media (max-width: 1400px) {
+			font-size: 20px;
+			padding: 20px 15px;
+			border-radius: 15px;
+		}
+		@media (max-width: 1023px) {
+			font-size: 18px;
+		}
+		@media (max-width: 767px) {
+			font-size: 14px;
+			padding: 15px;
+		}
 	}
 }
 
 .box-hoe-werkt {
 	padding: 150px 0 280px 0;
+	@media (max-width: 1400px) {
+		padding: 150px 0 200px 0;
+	}
+	@media (max-width: 1023px) {
+		padding: 60px 0 100px 0;
+	}
+	@media (max-width: 767px) {
+		padding: 0 0 40px 0;
+	}
 }
 
 .item-werkt {
 	margin-bottom: 250px;
+	@media (max-width: 1400px) {
+		margin-bottom: 180px;
+	}
+	@media (max-width: 1023px) {
+		margin-bottom: 60px;
+	}
+	@media (max-width: 767px) {
+		margin-bottom: 32px;
+	}
 	&:last-child {
 		margin-bottom: 0;
 	}
@@ -668,6 +816,18 @@ $blue: #3366ff;
 		.txt-werkt {
 			padding-right: 130px;
 			padding-left: 0;
+			@media (max-width: 1600px) {
+				padding-right: 80px;
+			}
+			@media (max-width: 1400px) {
+				padding-right: 60px;
+			}
+			@media (max-width: 1023px) {
+				padding-right: 40px;
+			}
+			@media (max-width: 1023px) {
+				padding-right: 0;
+			}
 		}
 		.avarta-werkt {
 			&:After {
@@ -680,16 +840,60 @@ $blue: #3366ff;
 			}
 		}
 	}
+	&:nth-child(2n+1) {
+		.col-md-6 {
+			&:first-child {
+				@media (max-width: 767px) {
+					order: 2;
+				}
+			}
+			&:last-child {
+				@media (max-width: 767px) {
+					order: 1;
+				}
+			}
+		}
+	}
 	.txt-werkt {
 		padding-left: 130px;
+		@media (max-width: 1600px) {
+			padding-left: 80px;
+		}
+		@media (max-width: 1400px) {
+			padding-left: 60px;
+		}
+		@media (max-width: 1023px) {
+			padding-left: 40px;
+		}
+		@media (max-width: 767px) {
+			padding-left: 0;
+			padding-bottom: 24px;
+		}
 		h2 {
 			color: #3366ff;
 		    font-size: 70px;
 		    font-weight: bold;
+			font-family: "Recursive";
+			@media (max-width: 1600px) {
+				font-size: 55px;
+			}
+			@media (max-width: 1400px) {
+				font-size: 44px;
+			}
+			@media (max-width: 1023px) {
+				font-size: 32px;
+			}
 		}
 		.desc {
 			padding: 65px 0;
     		font-weight: bold;
+			@media (max-width: 1600px) {
+				padding: 40px 0;
+			}
+			@media (max-width: 1023px) {
+				padding: 20px 0;
+				font-weight: normal;
+			}
 		}
 	}
 	.avarta-werkt {
@@ -700,12 +904,24 @@ $blue: #3366ff;
 		    bottom: -13%;
 		    left: -5%;
 		    z-index: -1;
+			@media (max-width: 1023px) {
+				opacity: 0;
+			}
 		}
 	}
 }
 
 .box-aanvragen {
 	padding: 120px 0 320px 0;
+	@media (max-width: 1600px) {
+		padding: 100px 0 200px 0;
+	}
+	@media (max-width: 1023px) {
+		padding: 40px 0 80px 0;
+	}
+	@media (max-width:767px) {
+		padding: 0 0 48px 0;
+	}
 	.content-aanvragen {
 		position: relative;
 		.after-abs {

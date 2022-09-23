@@ -20,19 +20,22 @@
 <body> 
 
 <header>
-    <div class="header-top d-none">
+    <div class="header-top">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-4">
-                    <div class="logo"><a href=""><img src="images/logo.png" class="img-fluid" alt=""></a></div>
+                <div class="col-md-4 col-sm-6 col-6">
+                    <div class="logo"><a href="index.php"><img src="images/logo.png" class="img-fluid" alt=""></a></div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 col-sm-6 col-6">
+                    <div class="btn-menu text-right d-none"><a href="javascript:void (0)"><img src="images/bar.svg" class="img-fluid" alt=""></a></div>
+                    <div class="overway"></div>
                     <div class="h-menu">
+                        <div class="close-menu d-none"><a href="javascript:void(0)"><img src="images/close-menu.svg" class="img-fluid" alt=""></a></div>
                         <ul>
-                            <li><a href="">Keuringen</a></li>
-                            <li><a href="">Keuring aanvragen</a></li>
-                            <li><a href="">Hoe het werkt</a></li>
-                            <li><a href="">FAQ</a></li>
+                            <li><a href="keuringen.php">Keuringen</a></li>
+                            <li><a href="aanvragen.php">Keuring aanvragen</a></li>
+                            <li><a href="hoe.php">Hoe het werkt</a></li>
+                            <li><a href="faq.php">FAQ</a></li>
                             <li><a href="">Contact</a></li>
                         </ul>
                     </div>

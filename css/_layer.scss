@@ -136,11 +136,13 @@ footer {
     }
   }
   .link-fter {
-    @media (max-width: 767px) {
+    @media (max-width: 1023px) {
       ul {
         display: block;
-        text-align: left;
         padding: 16px 0 0 0;
+        @media (max-width: 767px) {
+          text-align: left;
+        }
         li {
           padding: 0;
           margin: 0 0 10px 0;
@@ -280,21 +282,123 @@ footer {
   z-index: 100;
   width: 100%;
   padding: 60px 0;
+  transition: .4s all !important;
+  @media (max-width: 1600px) {
+    padding: 40px 0;
+  }
+  @media (max-width: 1023px) {
+    padding: 15px 0;
+  }
+  &.fixed-menu {
+    background: #333366;
+    padding: 20px 0;
+    @media (max-width: 1023px) {
+      padding: 10px 0;
+    }
+  }
+  .h-menu {
+    @media (max-width: 1023px) {
+      position: fixed;
+      background: #30364f;
+      top: 0;
+      left: -80%;
+      width: 80%;
+      height: 100%;
+      transition: 0.4s ease-out !important;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      z-index: 1001;
+      &.open_menu {
+        left: 0;
+      }
+    }
+  }
   ul {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    @media (max-width: 1023px) {
+      display: block;
+    }
     li {
       margin-right: 60px;
+      @media (max-width: 1400px) {
+        margin-right: 40px;
+        @media (max-width: 1023px) {
+          margin: 0 0 24px 0;
+        }
+        @media (max-width: 767px) {
+          margin: 0 0 16px 0;
+        }
+      }
       &:last-child {
         margin-right: 0;
+        @media (max-width: 1023px) {
+          margin: 0;
+        }
       }
       a {
         color: #cccccc;
         font-weight: bold;
-        font-size: 20px; 
+        font-size: 20px;
+        @media (max-width: 1400px) {
+          font-size: 18px;
+        }
+        @media (max-width: 1200px) {
+          font-size: 16px;
+        }
+        @media (max-width: 1023px) {
+          font-size: 24px;
+        }
+        @media (max-width: 767px) {
+          font-size: 16px;
+        }
       }
+    }
+  }
+}
+.close-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  @media (max-width: 1023px) {
+    display: block !important;
+  }
+  a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: red;
+    padding: 5px;
+    @media (max-width: 767px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+.btn-menu {
+  @media (max-width: 1023px) {
+    display: block !important;
+  }
+}
+.overway {
+  @media (max-width: 1023px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 3;
+    opacity: 0;
+    pointer-events: none;
+    &.open_menu {
+      opacity: 0.4;
+      pointer-events: unset;
     }
   }
 }
